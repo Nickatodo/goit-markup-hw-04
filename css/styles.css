@@ -65,7 +65,7 @@ p{
 
 .menu_nav{
     display: flex;
-    gap: 344px;
+    gap: 306px;
 }
 
 .menu_items{
@@ -85,13 +85,24 @@ p{
 
 .contacto_items{
     display: flex;
-    column-gap: 50px;
+    gap: 30px;
     align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
 }
 
-.contacto_items .contacto_item{
+.contacto_item {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.svg_contacto {
+    fill: #757575;
+}
+
+.contacto_link{
     font-weight: 500;
     line-height: 1.17;
     letter-spacing: 0.02em;
@@ -99,6 +110,12 @@ p{
 }
 
 .link:hover {
+    color: #2196F3;
+}
+
+.contacto_item:hover > svg,
+.contacto_item:hover > a{
+    fill: #2196F3;
     color: #2196F3;
 }
 
@@ -110,6 +127,7 @@ p{
     background-color: #2F303A;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient(rgba(0,0,0, 0.4),rgba(47, 48, 58, 0.4)),url(/images/fondo_titulo.jpg);
 }
 
 .titulo_div{
@@ -137,7 +155,7 @@ p{
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border: none;
-    padding: 10px 32px;
+    padding: 10px 1px 10px 2px;
 }
 
 .cualidad{
@@ -149,6 +167,17 @@ p{
     margin: 0;
     padding: 0;
     gap: 30px;
+}
+
+.cualidad_icon {
+    border-radius: 4px;
+    background-color: #F5F4FA;
+    width: 270px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
 .cualidad_items .cualidad_item_titulo{
@@ -166,13 +195,14 @@ p{
 }
 
 .dedicamos{
-    display: flex;
     padding: 94px 0;
+    display: flex;
     flex-direction: column;
 }
 
 .dedicamos_titulo,
-.equipo_titulo{
+.equipo_titulo,
+.clientes_titulo{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -206,7 +236,7 @@ p{
 }
 
 .equipo_div{
-    padding: 30px 44px 30px 45px;
+    padding: 30px 32px 30px 32px;
 }
 
 .equipo_items .equipo_item_titulo{
@@ -222,13 +252,75 @@ p{
     line-height: 1.17;
     color: #757575;
     text-align: center;
-    margin: 0;
+    margin-bottom: 16px;
+}
+
+.equipo_rrss{
+    display: flex;
+    gap: 10px;
+}
+
+.equipo_icon{
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.svg_equipo{
+    fill: #AFB1B8;
+}
+
+.equipo_icon:hover {
+    background-color: #2196F3;
+}
+
+.equipo_icon:hover .svg_equipo{
+    fill:#FFFFFF;
+}
+
+.clientes{
+    padding: 94px 0;
+}
+
+.clientes_items {
+    display: flex;
+    gap: 30px;
+}
+
+.clientes_item {
+    border-radius: 4px;
+    width: 170px;
+    height: 81px;
+    border: 1px solid #AFB1B8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.svg_cliente{
+    fill: #AFB1B8;
+}
+
+.clientes_item:hover {
+    border: 1px solid #2196F3;
+}
+
+.clientes_item:hover .svg_cliente {
+    fill: #2196F3;
 }
 
 .base{
     background-color: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+.base_address{
+    display: flex;
+    gap: 70px;
 }
 
 .base_items .base_item_mapa{
@@ -243,6 +335,37 @@ p{
     color: #FFFFFF99;
 }
 
+.base_titulo{
+    color: #FFFFFF;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.base_rrss {
+    display: flex;
+    gap: 10px;
+}
+
+.base_icon {
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.10);;
+}
+
+.svg_base{
+    fill: #FFFFFF;
+}
+
+.base_icon:hover {
+    background-color: #2196F3;
+}
+
+
+/* PORTAFOLIO */
 .portafolio{
     padding-top: 106px;
     padding-bottom: 82px;
@@ -271,6 +394,12 @@ p{
 .filtro_item:focus{
     background-color: #2196F3;
     color: #FFFFFF;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    outline: none;
+}
+
+.filtro_item:hover{
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
 .listado_items{
@@ -278,13 +407,17 @@ p{
     margin: 0;
     padding: 0;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 27px;
 }
 
 .listado_item{
     flex-basis: calc((100% - 60px) / 3);
     background: #FFF;
-    border: 1px #EEE;
+    border: 1px solid #EEE;
+}
+
+.listado_item:hover{
+    cursor: pointer;
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
